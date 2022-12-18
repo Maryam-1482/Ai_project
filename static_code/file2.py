@@ -383,7 +383,7 @@ display.print_generation(population)
 #display.print_schedule_as_table(population.get_schedules()[0])
 genatic=genatic_algorithm()
 
-while (population.get_schedules()[0].get_fitness() != 1.0):
+while (population.get_schedules()[0].get_fitness() != 1.0 and genrationNumber<50):
     genrationNumber += 1
     print("\n> Generation # " + str(genrationNumber))
     population = genatic.evolve(population)
